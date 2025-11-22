@@ -127,7 +127,7 @@ elif [[ $check == *'0'* ]]; then
 printf "\e[1;93mNot Found!\e[0m\n"
 fi
 
-## GLOOGLE PLUS
+## GOOGLE PLUS
 
 printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] GooglePlus: \e[0m"
 check=$(curl -s "https://plus.google.com/+$username/posts" -L -H "Accept-Language: en" -i | grep -o 'HTTP/2 404' ; echo $?)
